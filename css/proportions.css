@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2em;
+    background-color: rgb(140, 171, 189);
+}
+
+.card1 {
+    /* flex-basis: 12.5%; */
+    flex-grow: 1;
+}
+.card2 {
+    /* flex-basis: 62.5%; */
+    flex-grow: 5;
+}
+.card3 {
+    /* flex-basis: 25%; */
+    flex-grow: 2;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+}
